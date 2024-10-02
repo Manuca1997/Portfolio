@@ -1,0 +1,557 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-do-link);
+}
+
+/*------------------------------ Seção Menu ------------------------------*/
+
+.cabecalho {
+    display: flex;
+    background-color: #FFAD60;
+    width: 1134px fixed;
+    height: 50px;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    font-size: 18px;
+}
+
+
+.navegacao__lista {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+
+}
+.navegacao__elemento1,
+.navegacao__elemento2,
+.navegacao__elemento3,
+.navegacao__elemento4,
+.navegacao__elemento5,
+.navegacao__elemento6 {
+    padding: 0 20px;
+}
+.navegacao__elemento1:hover,
+.navegacao__elemento2:hover,
+.navegacao__elemento3:hover,
+.navegacao__elemento4:hover,
+.navegacao__elemento5:hover,
+.navegacao__elemento6:hover {
+    color: black;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+
+/*------------------------------ Seção Apresentação ------------------------------*/
+
+.apresentacao {
+    display: flex;
+    width: fixed 1136px;
+    height: 368px;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #FFEEAD;
+}
+
+.apresentacao__foto {
+    display: flex;
+    padding: 10px 50px;
+    border-radius: 50%;
+}
+
+.apresentacao__titulo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.apresentacao__subtitulo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.redes {
+    display: flex;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    gap: 100px;
+}
+.redes__elemento1:hover,
+.redes__elemento2:hover,
+.redes__elemento3:hover,
+.redes__elemento4:hover {
+    color: black;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+/*------------------------------ Seção Sobre mim ------------------------------*/
+
+.sobre-mim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.sobre-mim__titulo {
+    display: flex;
+    font-size: 30px;
+}
+
+.sobre-mim__texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 0 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.sobre-mim__assinatura {
+    display: flex;
+    padding: 50px;
+}
+/*------------------------------ Seção de Habilidades ------------------------------*/
+
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #96CEB4;
+}
+
+.habilidades__titulo {
+    display: flex;
+    font-size: 30px;
+}
+
+.habilidades__lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.habilidades__elemento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.habilidades__nome {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+.habilidades__nome:hover {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/*------------------------------ Seção de Hobbies ------------------------------*/
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hobbies__titulo {
+    display: flex;
+    font-size: 30px;
+}
+
+.hobbies__lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.hobbies__elemento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.hobbies__nome {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/*------------------------------ Seção de Formação Acadêmica ------------------------------*/
+
+.formacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #96CEB4;
+}
+
+.formacao__titulo {
+    display: flex;
+    font-size: 30px;
+}
+
+.formacao__lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.formacao__elemento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.formacao__nome {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+/*------------------------------ Seção de Projetos ------------------------------*/
+
+
+.projetos__conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.projetos__conteiner-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas com o mesmo tamanho */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    margin-bottom: 50px; /* Aumentei para dar mais espaço entre a seção e a próxima */
+}
+
+.projetos__titulo {
+    font-size: 30px;
+    margin-bottom: 30px; /* Adicionei para separar o título dos conteúdos abaixo */
+}
+
+.projetos__nome {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: center; /* Centraliza o texto */
+}
+
+.projetos__conteiner img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do container */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 10px; /* Pequeno espaço abaixo da imagem */
+}
+
+.projetos__descricao {
+    margin-top: 0;
+    font-size: 16px; /* Ajuste para melhorar a leitura */
+    text-align: center; /* Centraliza o texto */
+    padding: 0 10px; /* Adiciona um pequeno padding lateral para melhor layout */
+}
+
+
+/*------------------------------ Seção de Contato ------------------------------*/
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #96CEB4;
+}
+
+/*------------------------------ Responsividade ------------------------------*/
+
+@media (max-width: 1020px) {
+
+    /*------------------------------ Seção Menu ------------------------------*/
+    .cabecalho {
+        /* Mantém a direção da flexbox como row para manter os itens lado a lado */
+        flex-direction: row;
+        height: 80px; /* Mantém altura fixa */
+        padding: 0 20px; /* Mantém padding */
+    }
+
+    .navegacao__lista {
+        flex-direction: row; /* Mantém os itens lado a lado */
+        align-items: center;
+        gap: 20px; /* Espaçamento entre itens */
+    }
+    .navegacao__elemento1,
+    .navegacao__elemento2,
+    .navegacao__elemento3,
+    .navegacao__elemento4,
+    .navegacao__elemento5,
+    .navegacao__elemento6 {
+        padding: 0 10px;
+    }
+
+    /*------------------------------ Remover a Foto da Seção Apresentação ------------------------------*/
+    .apresentacao__foto {
+        display: none; /* Esconde a foto */
+    }
+
+    /*------------------------------ Seção Apresentação e Sobre mim ------------------------------*/
+    .apresentacao {
+        flex-direction: column; /* Empilha verticalmente */
+        align-items: center;
+        padding: 20px;
+    }
+
+    .apresentacao__titulo {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .apresentacao__subtitulo {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .redes {
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Empilhar "Sobre mim" abaixo de "Apresentação" */
+    /* Isso já é tratado pela estrutura HTML, mas garantimos com margin */
+    .apresentacao,
+    .sobre-mim {
+        width: 100%;
+    }
+
+    /*------------------------------ Seções Gerais ------------------------------*/
+    .sobre-mim__texto {
+        padding: 0 40px;
+        font-size: 15px;
+    }
+
+    .habilidades__lista,
+    .hobbies__lista,
+    .formacao__lista {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .habilidades__elemento,
+    .hobbies__elemento,
+    .formacao__elemento {
+        width: 45%; /* Ajuste para duas colunas */
+        margin-bottom: 20px;
+    }
+
+    .projetos__conteiner-wrapper {
+        grid-template-columns: repeat(2, 1fr); /* Mantém duas colunas */
+    }
+
+    .projetos__titulo,
+    .projetos__nome,
+    .projetos__descricao {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .contato {
+        padding: 20px;
+    }
+
+    /* Ajustar tamanhos de fonte gerais */
+    body {
+        font-size: 15px;
+    }
+
+    .cabecalho,
+    .apresentacao,
+    .sobre-mim,
+    .habilidades,
+    .hobbies,
+    .formacao,
+    .projetos,
+    .contato {
+        padding: 15px;
+    }
+
+    /* Ajustar gaps e paddings para telas menores */
+    .redes {
+        gap: 15px;
+    }
+}
+
+
+@media (max-width: 425px) {
+
+    /*------------------------------ Seção Menu ------------------------------*/
+    .cabecalho {
+        flex-direction: column; /* Menu em coluna */
+        height: auto; /* Altura dinâmica */
+        padding: 10px; /* Reduzir o padding */
+    }
+
+    .navegacao__lista {
+        flex-direction: column; /* Itens do menu em coluna */
+        align-items: center; /* Centralizar os itens */
+        gap: 10px; /* Espaçamento menor entre itens */
+    }
+
+    /*------------------------------ Seção Apresentação ------------------------------*/
+    .apresentacao {
+        flex-direction: column; /* Empilha os elementos */
+        align-items: center;
+        padding: 10px; /* Reduzir o padding */
+    }
+
+    .apresentacao__titulo {
+        font-size: 22px; /* Reduzir o tamanho da fonte */
+        text-align: center;
+    }
+
+    .apresentacao__subtitulo {
+        font-size: 14px; /* Reduzir o tamanho da fonte */
+        text-align: center;
+    }
+
+    /* Redes Sociais */
+    .redes {
+        gap: 10px; /* Reduzir o espaço entre os ícones */
+    }
+
+    /*------------------------------ Seção Sobre mim ------------------------------*/
+    .sobre-mim {
+        padding: 10px; /* Reduzir o padding */
+    }
+
+    .sobre-mim__titulo {
+        font-size: 24px; /* Reduzir o tamanho da fonte */
+    }
+
+    .sobre-mim__texto {
+        padding: 0 20px; /* Reduzir o padding lateral */
+        font-size: 14px; /* Reduzir o tamanho da fonte */
+    }
+
+    /*------------------------------ Seção de Habilidades ------------------------------*/
+    .habilidades__lista {
+        flex-direction: column; /* Elementos em coluna */
+        align-items: center; /* Centralizar os itens */
+        gap: 20px; /* Espaçamento entre os elementos */
+    }
+
+    .habilidades__elemento {
+        width: 100%; /* Cada elemento ocupa a largura total */
+        text-align: center; /* Centralizar os textos */
+    }
+
+    /*------------------------------ Seção de Hobbies ------------------------------*/
+    .hobbies__lista {
+        flex-direction: column; /* Elementos em coluna */
+        align-items: center;
+        gap: 20px; /* Espaçamento entre os elementos */
+    }
+
+    .hobbies__elemento {
+        width: 100%; /* Cada elemento ocupa a largura total */
+        text-align: center; /* Centralizar os textos */
+    }
+
+    /*------------------------------ Seção de Formação Acadêmica ------------------------------*/
+    .formacao__lista {
+        flex-direction: column; /* Elementos em coluna */
+        align-items: center;
+        gap: 20px; /* Espaçamento entre os elementos */
+    }
+
+    .formacao__elemento {
+        width: 100%; /* Cada elemento ocupa a largura total */
+        text-align: center; /* Centralizar os textos */
+    }
+
+    /*------------------------------ Seção de Projetos ------------------------------*/
+    .projetos__conteiner-wrapper {
+        grid-template-columns: 1fr; /* Um projeto por linha */
+        gap: 15px; /* Espaçamento entre os projetos */
+    }
+
+    .projetos__titulo {
+        font-size: 22px; /* Reduzir o tamanho da fonte */
+    }
+
+    .projetos__nome {
+        font-size: 18px; /* Reduzir o tamanho da fonte */
+    }
+
+    .projetos__descricao {
+        font-size: 14px; /* Reduzir o tamanho da fonte */
+        text-align: center; /* Centralizar o texto */
+    }
+
+    /*------------------------------ Seção de Contato ------------------------------*/
+    .contato {
+        padding: 20px; /* Ajustar padding */
+    }
+
+    /*------------------------------ Ajustes Gerais ------------------------------*/
+    body {
+        font-size: 14px; /* Reduzir tamanho da fonte geral */
+    }
+
+    .cabecalho,
+    .apresentacao,
+    .sobre-mim,
+    .habilidades,
+    .hobbies,
+    .formacao,
+    .projetos,
+    .contato {
+        padding: 10px; /* Reduzir padding geral */
+    }
+
+    /* Ajustar gaps e paddings para telas menores */
+    .redes {
+        gap: 10px; /* Menor espaçamento entre os ícones */
+    }
+
+}
